@@ -1,0 +1,32 @@
+{
+  "name": "postcss-flex-fallback",
+  "version": "0.1.0",
+  "description": "PostCSS plugin fixed flex on android 2.x",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "flex"
+  ],
+  "author": "rguanghui <rguanghui.stupid@gmail.com>",
+  "license": "MIT",
+  "repository": "rguanghui/postcss-flex-fallback",
+  "bugs": {
+    "url": "https://github.com/rguanghui/postcss-flex-fallback/issues"
+  },
+  "homepage": "https://github.com/rguanghui/postcss-flex-fallback",
+  "dependencies": {
+    "postcss": "^5.0.16"
+  },
+  "devDependencies": {
+    "ava": "^0.12.0",
+    "eslint": "^2.1.0",
+    "eslint-config-postcss": "^2.0.0"
+  },
+  "scripts": {
+    "test": "ava && eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5"
+  }
+}
