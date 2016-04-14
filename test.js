@@ -11,6 +11,17 @@ function run(t, input, output, opts = { }) {
         });
 }
 
-test('flex', t => {
+test('flex1', t => {
     return run(t, 'a{ flex: 1; }', 'a{ flex: 1; display: block; width: 0; }');
+});
+
+test('flex2', t => {
+    return run(t, 'a{ flex: 1 0 auto; }', 'a{ flex: 1 0 auto; }');
+});
+
+test('flex3', t => {
+    return run(t,
+        'a{ flex-shrink: 0; }',
+        'a{ flex-shrink: 0; display: block; }'
+    );
 });
